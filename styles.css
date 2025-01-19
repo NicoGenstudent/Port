@@ -1,0 +1,168 @@
+body {
+    background: linear-gradient(45deg, #ffea70, #ff85ff);
+    color: #ff69b4;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  #background, 
+  #background-works,
+  #background-contact {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+  }
+
+  #background {
+    background-image: url("Images/Piolin\ background.jpg");
+  }
+  
+  #background-works {
+    background-image: url("Images/Piolin pages-showcase.jpg"); /* Background image */
+  }
+
+  .square {
+    position: absolute;
+    width: 30%;  /* Adjust based on the size of the white squares */
+    height: 30%; /* Adjust based on the size of the white squares */
+  }
+  
+  #square1 {
+    top: 46%; /* Adjust to position over the first white square */
+    left: 7%; /* Adjust to position over the first white square */
+    transform: rotate(6deg) skewX(-15deg);
+  }
+  
+  #square2 {
+    top: 18.5%; /* Adjust to position over the second white square */
+    left: 53.5%; /* Adjust to position over the second white square */
+    transform: rotate(6deg) skewX(-15deg);
+  }
+
+  .profile-picture {
+    position: absolute;
+    width: 30%;
+    top: 16.6%; /* Adjust to position over the second white square */
+    left: 18.5%; /* Adjust to position over the second white square */
+  }
+
+  .image-1 {
+    width: 134%;
+    height: 134%;
+  }
+
+  .image-2 {
+    width: 140%;
+    height: 134%;
+  }
+
+  .image-3 {
+    width: 70%;
+  }
+
+  .texto {
+    position: absolute;
+    left: 630px;
+    top: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .link-texto {
+    display: flex;
+    justify-content: center;
+  }
+
+  .link-inicio {
+    position: absolute;
+    left: 950px;
+    top: 86px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  .link-siguiente {
+    position: absolute;
+    right: 600px;
+    bottom: 292px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  #background-contact {
+    background-image: url("Images/Piolin\ profile-picture.jpg"); /* Background image */
+  }
+
+  #datos {
+    position: absolute;
+    top: 150px;
+    right: 400px;
+    width: 400px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #ff69b4;
+  }
+
+  h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px #ff1493;
+    margin-top: 20px;
+  }
+  
+  p {
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px #ff69b4;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.3);
+    letter-spacing: 5px;
+    line-height: 50px;
+    border: 3px dashed #ff69b4;
+    border-radius: 15px;
+    padding: 20px 0px 150px;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .glitter {
+    position: relative;
+    display: inline-block;
+    color: #fff;
+    background: linear-gradient(to right, #ff1493, #ff69b4, #ff1493);
+    background-clip: text; /* Standard */
+    -webkit-background-clip: text; /* WebKit */
+    -webkit-text-fill-color: transparent; /* WebKit-specific */
+    animation: sparkle 2s infinite;
+  }
+  
+  .glitter::before {
+    content: ""; /* Create the background box */
+    position: absolute;
+    top: 0;
+    left: -7px;
+    width: 100%;
+    height: 78%;
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent box */
+    z-index: -1; /* Send it behind the text */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    padding: 0.2em; /* Optional: Add padding around text */
+  }
+
+  @keyframes sparkle {
+    0%, 100% {
+      text-shadow: 2px 2px 5px #ff69b4, -2px -2px 5px #ff69b4;
+    }
+    50% {
+      text-shadow: 5px 5px 10px #ff1493, -5px -5px 10px #ff1493;
+    }
+  }
+  
